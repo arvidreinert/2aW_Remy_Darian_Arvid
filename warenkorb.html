@@ -5,7 +5,18 @@
 </head>
 
 <body>
-  <h1>warenkorb</h1>
+  <h1>Ihr Warenkorb:</h1>
+  <p id="output"></p>
+  
+  <script src="produkte.js"></script>
+  <script>
+    const output = document.getElementById("output");
+
+    produkte.forEach(p => {
+      output.innerHTML += `<div><p>${p.name} - ${p.preis} CHF</p><br><img src="${p.bild}" alt="${p.name}", style="height: 15vw;"><img src="logo.png" alt="test", style="height:5vw;"></div><hr>`;
+    });
+  </script>
+
   <p class="bottomlinks", style="margin-top: 15vh;">
     <a href="kontakt.html"><img src="support.png" alt="support"></a>
     <a href="warenkorb.html"><img src="cart.png" alt="warenkorb"></a>
