@@ -4,4 +4,15 @@ a {
 .spc {
   color: black;
 }
+.imagespar {
+  height: 25px;
+}
+.indexflex {
+  display: flex;
+  flex-direction: row;
+}
+.bottomlinks {
+  display: flex;
+  flex-direction: row;
+}
 /*style="color: green; border: 2px; border-color: black; background-color: aquamarine; border-radius: 10px; border-style: solid; text-decoration: none; height: 5vh;"
