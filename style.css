@@ -14,16 +14,17 @@
   height: 25vh;
   border-style: solid;
   border-color: black;
-  margin-left: 10vw;
+  margin-left: 15vw;
 }
 
-.indexflex {
+.indexflex { 
   display: flex;
   flex-direction: row;
 }
-.bottomlinks {
-  display: flex;
-  flex-direction: row;
-  background-color: blue;
+
+.bottomlinks a  img{
+  margin-left: 15vw;
+  width: 5vw;
+
 }
 /*style="color: green; border: 2px; border-color: black; background-color: aquamarine; border-radius: 10px; border-style: solid; text-decoration: none; height: 5vh;"
