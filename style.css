@@ -1,8 +1,18 @@
+.warenkorb {
+  height: 3vh;
+  margin-left: 85vw;
+}
+.buybutton {
+  background-color: transparent;
+  border: none;
+}
 .title {
   font-family: Roboto;
   color: rgb(0, 255, 30);
   text-align: center;
   font-size: 48px;
+  display: flex;
+  flex-direction: column;
 }
 
 .imagespar {

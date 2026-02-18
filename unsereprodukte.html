@@ -5,23 +5,22 @@
 </head>
 
 <body>
-  <h1>Unsere Produkte</h1>
+  <h1>Unsere Produkte <a class="warenkorb"href="warenkorb.html"><img src="cart.png" alt="warenkorb" style="width: 5vw;"></a></h1>
   <p id="output"></p>
   
   <script src="produkte.js"></script>
   <script>
     const output = document.getElementById("output");
-
     produkte.forEach(p => {
       output.innerHTML += `<div><p>${p.name} - ${p.preis} CHF</p><br><img src="${p.bild}" alt="${p.name}", style="height: 15vw;">
-        <img src="logo.png" alt="test", style="height:5vw; margin-bottom: 5vw;">
+        <button type="button" class="buybutton" id="buy${p.name}"><img src="logo.png" alt="test", style="height:5vw; margin-bottom: 5vw;"></button>
         </div><hr>`;
     });
   </script>
 
   <p class="bottomlinks", style="margin-top: 15vh;">
     <a href="kontakt.html"><img src="support.png" alt="support"></a>
-    <a href="unsereprodukte.html"><img src="logo.png" alt="warenkorb"></a>
+    <a href="unsereprodukte.html"><img src="logo.png" alt="unsereprodukte"></a>
     <a href="aboutus.html"><img src="us.png" alt="aboutus" style="width: 4vw;"></a>
     <a href="index.html"><img src="home.png" alt="home"></a>
   </p>
