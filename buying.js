@@ -2,7 +2,7 @@ var kaufen = function (produkt) {
   var x = function () {
     let eingekauftewaren = JSON.parse(localStorage.getItem("eingekauftewaren")); 
     if (eingekauftewaren === null) {
-      eingekauftewaren = []
+      eingekauftewaren = [];
     };
     eingekauftewaren.push(produkt);
     localStorage.setItem("eingekauftewaren", JSON.stringify(eingekauftewaren));
