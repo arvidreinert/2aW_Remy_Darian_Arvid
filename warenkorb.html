@@ -7,20 +7,10 @@
 <body>
   <h1>Warenkorb<a class="warenkorb"href="warenkorb.html"><img src="cart.png" alt="warenkorb" style="width: 5vw;"></a></h1>
   <p id="output1"></p>
+  <p id="output2"></p><button type="button" id="clear" class="buybutton">Warenkorb leeren: <img src="trashcan.png" alt="clear" style="width: 2vw;"></button>
   
   <script src="produkte.js"></script>
-  <script>
-    const output = document.getElementById("output1");
-    let eingekauftewaren = JSON.parse(localStorage.getItem("eingekauftewaren"))
-    if (eingekauftewaren === null) {
-      eingekauftewaren = [];
-    };
-    console.log(eingekauftewaren);
-    eingekauftewaren.forEach(p => {
-      output.innerHTML += `<div><p>${p.name} - ${p.preis} CHF</p><br><img src="${p.bild}" alt="${p.name}", style="height: 15vw;">
-        </div><hr>`;
-    });
-  </script>
+  <script src="warenkorb.js"></script>
 
   <p class="bottomlinks", style="margin-top: 15vh;">
     <a href="kontakt.html"><img src="support.png" alt="support"></a>
