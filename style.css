@@ -2,6 +2,69 @@
   height: 3vh;
   margin-left: 85vw;
 }
+
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 4);
+  font-size: 60px;
+  text-align: center;
+  animation: moveRighthero 2s;
+}
+
+@keyframes moveRighthero {
+  from {left: 0px}
+  to {left: 50%}
+}
+
+.indexinfo {
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.undertitle {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  color: black;
+  font-family: 'Times New Roman', Times;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  text-align: center;
+}
+
+.index1text{
+  background-color: rgb(255, 250, 164);
+  border-radius: 30px;
+  position: absolute; 
+  margin-top: 12%;
+  right: 1vw;
+  width: 50%;
+  color: black;
+  font-size: 32px;
+  text-align: left;
+  animation: moveRightindextext1 1.5s;
+}
+
+@keyframes moveRightindextext1 {
+  from {right: 0px}
+  to {right: 1vw}
+}
+
 .buybutton {
   background-color: transparent;
   border: none;
@@ -23,37 +86,10 @@
   flex-direction: column;
 }
 
-.imagespar {
-  display: flex;
-  gap: 20px;
-}
-
-.imagespar img {
-  height: 25vh;
-  border-style: solid;
-  border-color: black;
-  margin-left: 15vw;
-}
-
-.indexflex { 
-  display: flex;
-  flex-direction: row;
-}
-
 .bottomlinks a  img{
   margin-left: 15vw;
+  margin-top: 150px;
   width: 5vw;
-
 }
-.shopnowlink {
-  border: none;
-  border-radius: 20px;
-  width: 50vw;
-  background-color: aquamarine;
-  text-decoration: none;
-  color: black;
-  margin-left: 35;
-  font-size: 48px;
-};
 
 /*style="color: green; border: 2px; border-color: black; background-color: aquamarine; border-radius: 10px; border-style: solid; text-decoration: none; height: 5vh;"
