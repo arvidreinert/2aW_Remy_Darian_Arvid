@@ -4,7 +4,7 @@ if (eingekauftewaren === null) {
   eingekauftewaren = [];
 };
 eingekauftewaren.forEach(p => {
-  output.innerHTML += `<div><p>${p.name} - ${p.preis} CHF</p><br><img src="${p.bild}" alt="${p.name}", style="height: 15vw;">
+  output.innerHTML += `<div><p>${p.name} - ${p.preis} CHF</p><br><img src="products/${p.bild}" alt="${p.name}", style="height: 15vw;">
     </div><hr>`;
 });
 document.getElementById("output2").innerHTML = `Items:${eingekauftewaren.length} - <b>${eingekauftewaren.reduce((summe, produkt) => {
