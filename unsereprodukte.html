@@ -9,17 +9,17 @@
   <h1 class="produktetitel">Unsere Produkte</h1>
   <a class="warenkorb"href="warenkorb.html"><img src="media/cart.png" alt="warenkorb" style="width: 5vw;"></a>
   </div>
-  <p id="output" class="produkte-grid"></p>
+  <p id="output" class="produktegrid"></p>
 
   <script src="javascript/produkte.js"></script>
   <script>
     const output = document.getElementById("output");
     produkte.forEach(p => {
-      output.innerHTML += `<div class="product-card">
-        <p class="produkt-cardtitel">${p.name}</p>
+      output.innerHTML += `<div class="productcard">
+        <p class="produktcardtitel">${p.name}</p>
         <br>
         <img src="products/${p.bild}" alt="${p.name}", style="height: 15vw;">
-        <p class="produkt-cardpreis">${p.preis} CHF</p>
+        <p class="produktcardpreis">${p.preis} CHF</p>
         <button type="button" class="buybutton" id="buy${p.name}">
           <img src="media/add_to_cart.png" alt="test", style="height:5vw; margin-bottom: 5vw;">
         </button>

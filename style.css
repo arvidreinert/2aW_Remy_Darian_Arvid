@@ -9,7 +9,7 @@
   object-fit: cover;
 }
 
-.hero-text {
+.herotext {
   position: absolute; 
   top: 50%;
   left: 50%;
@@ -158,24 +158,24 @@
   margin-left: 85vw;
 }
 
-.produkte-grid {
+.produktegrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
   padding: 40px;
 }
 
-.produkt-card {
+.produktcard {
   background: rgb(216, 216, 216);
   padding: 20px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   text-align: center;
 }
-.produkt-cardtitel {
+.produktcardtitel {
   color: black;
   font-size: 25px;
 }
-.produkt-cardpreis {
+.produktcardpreis {
   color: black;
   font-size: 25px;
 }
@@ -187,6 +187,33 @@
   border-radius: 50px;
   height: 10vh;
   font-size: 15px;
+}
+
+.contacttable {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background: rgb(255, 250, 164);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  margin-top: 2vw;
+  text-orientation: upright;
+}
+
+.contacttable td {
+  padding: 12px;
+  text-align: center;
+}
+.cttitle {
+  font-family: 'Times New Roman', Times;
+  font-size: 2vw;
+  text-align: center;
+}
+.contacttable tbody td:nth-child(even) {
+  background: rgb(255, 248, 123);
 }
 
 /*style="color: green; border: 2px; border-color: black; background-color: aquamarine; border-radius: 10px; border-style: solid; text-decoration: none; height: 5vh;"

@@ -4,11 +4,11 @@ if (eingekauftewaren === null) {
   eingekauftewaren = [];
 };
 eingekauftewaren.forEach(p => {
-  output.innerHTML += `<div class="product-card">
-        <p class="produkt-cardtitel">${p.name}</p>
+  output.innerHTML += `<div class="productcard">
+        <p class="produktcardtitel">${p.name}</p>
         <br>
         <img src="products/${p.bild}" alt="${p.name}", style="height: 15vw;">
-        <p class="produkt-cardpreis">${p.preis} CHF</p>
+        <p class="produktcardpreis">${p.preis} CHF</p>
         </button>
         </div>
         <hr>
