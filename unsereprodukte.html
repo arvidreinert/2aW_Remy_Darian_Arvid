@@ -5,22 +5,31 @@
 </head>
 
 <body>
-  <h1>Unsere Produkte <a class="warenkorb"href="warenkorb.html"><img src="media/cart.png" alt="warenkorb" style="width: 5vw;"></a></h1>
+  <div class="produktebar1">
+  <h1 class="produktetitel">Unsere Produkte</h1>
+  <a class="warenkorb"href="warenkorb.html"><img src="media/cart.png" alt="warenkorb" style="width: 5vw;"></a>
+  </div>
   <p id="output"></p>
 
   <script src="javascript/produkte.js"></script>
   <script>
     const output = document.getElementById("output");
     produkte.forEach(p => {
-      output.innerHTML += `<div><p>${p.name} - ${p.preis} CHF</p><br><img src="products/${p.bild}" alt="${p.name}", style="height: 15vw;">
-        <button type="button" class="buybutton" id="buy${p.name}"><img src="media/logo.png" alt="test", style="height:5vw; margin-bottom: 5vw;"></button>
-        </div><hr>`;
+      output.innerHTML += `<div>
+        <p>${p.name} - ${p.preis} CHF</p>
+        <br>
+        <img src="products/${p.bild}" alt="${p.name}", style="height: 15vw;">
+        <button type="button" class="buybutton" id="buy${p.name}">
+          <img src="media/logo.png" alt="test", style="height:5vw; margin-bottom: 5vw;">
+        </button>
+        </div>
+        <hr>`;
     });
   </script>
 
   <script src="javascript/buying.js"></script>
 
-  <p class="bottomlinks", style="margin-top: 15vh;">
+  <p class="bottomlinksproducts", style="margin-top: 15vh;">
     <a href="kontakt.html"><img src="media/support.png" alt="support"></a>
     <a href="unsereprodukte.html"><img src="media/logo.png" alt="unsereprodukte"></a>
     <a href="aboutus.html"><img src="media/us.png" alt="aboutus" style="width: 4vw;"></a>
