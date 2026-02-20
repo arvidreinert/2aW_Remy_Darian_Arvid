@@ -135,6 +135,11 @@
   width: 5vw;
 }
 
+.bottomlinkswarenkorb a  img{
+  margin-left: 15vw;
+  margin-top: 5vw;
+  width: 5vw;
+}
 .produktebar1 {
   display: flex;
   flex-direction: column;
@@ -173,6 +178,15 @@
 .produkt-cardpreis {
   color: black;
   font-size: 25px;
+}
+
+.warenkorbclear {
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  height: 10vh;
+  font-size: 15px;
 }
 
 /*style="color: green; border: 2px; border-color: black; background-color: aquamarine; border-radius: 10px; border-style: solid; text-decoration: none; height: 5vh;"

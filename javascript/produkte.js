@@ -4,6 +4,7 @@ const produkte = [
   { name: "Kontroller fuer N64", preis: 79.86 , bild: "product3.jpg"},
   { name: "Fernseher", preis: 499.99 , bild: "product4.jpg"},
   { name: "Gaming Stuhl", preis: 99.99 , bild: "product5.jpg"},
-  { name: "Mountainbike", preis: 249.5 , bild: "product6.jpg"}
+  { name: "Mountainbike", preis: 249.5 , bild: "product6.jpg"},
+  { name: "Colnago Y1Rs", preis: 16500, bild: "product7.jpg"}
   
 ];

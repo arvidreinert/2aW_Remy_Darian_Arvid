@@ -4,8 +4,15 @@ if (eingekauftewaren === null) {
   eingekauftewaren = [];
 };
 eingekauftewaren.forEach(p => {
-  output.innerHTML += `<div><p>${p.name} - ${p.preis} CHF</p><br><img src="products/${p.bild}" alt="${p.name}", style="height: 15vw;">
-    </div><hr>`;
+  output.innerHTML += `<div class="product-card">
+        <p class="produkt-cardtitel">${p.name}</p>
+        <br>
+        <img src="products/${p.bild}" alt="${p.name}", style="height: 15vw;">
+        <p class="produkt-cardpreis">${p.preis} CHF</p>
+        </button>
+        </div>
+        <hr>
+        `;
 });
 document.getElementById("output2").innerHTML = `Items:${eingekauftewaren.length} - <b>${eingekauftewaren.reduce((summe, produkt) => {
   return summe + produkt.preis;}, 0)
