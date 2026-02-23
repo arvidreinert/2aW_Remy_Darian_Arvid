@@ -283,10 +283,22 @@
   position: relative;
   background: rgb(255, 248, 123);
   border: none;
-  left: 50%;
+  left: 30%;
+  width: 20%;
   transform: translate(-50%, -50%);
   margin-top: 1%;
+  height: 15%;
+  text-align: center;
+  color: black;
+}
+
+.kontaktinputmail {
+  position: relative;
+  background: rgb(255, 248, 123);
+  border: none;
+  left: 50%;
   width: 20%;
+  transform: translate(-50%, -50%);
   height: 15%;
   text-align: center;
   color: black;
@@ -299,8 +311,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 8%;
-  width: 50%;
-  text-align: center;
+  width: 60%;
+  text-align: left;
   color: black;
   resize: none;
   min-height: 120px;
