@@ -2,7 +2,8 @@
 <html>
   <head>
   <link rel="stylesheet" href="style.css">
-</head>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  </head>
 
 <body>
   <div class="produktebar1">
@@ -16,7 +17,7 @@
     <tbody>
       <tr>
         <td>Mail</td>
-        <td><a href="mailto:easycart.support@gmail.com" target="_blank">easycart.mideur@porkmails.com</a></td>
+        <td><a href="mailto:easycart.mideur@gmail.com" target="_blank">easycart.mideur@gmail.com</a></td>
       </tr>
       <tr>
         <td>Telefon</td>
@@ -28,6 +29,13 @@
       </tr>
     </tbody>
   </table>
+
+  <form id="contactform">
+    <input type="text" id="name" name="name" placeholder="Max Mustermann"><br>
+    <textarea id="message" name="message" rows="100" cols="79"></textarea><br>
+    <button type="submit">Senden</button>
+  </form> 
+  <script src="javascript/email.js"></script>
 
   <p class="bottomlinkswarenkorb", style="margin-top: 15vh;">
     <a href="kontakt.html"><img src="media/support.png" alt="support"></a>
