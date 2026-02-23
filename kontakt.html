@@ -29,11 +29,12 @@
       </tr>
     </tbody>
   </table>
+  <p class="kontakttext1">Hier Können Sie uns direkt eine Nachricht schreiben:</p>
 
   <form id="contactform">
-    <input type="text" id="name" name="name" placeholder="Max Mustermann"><br>
-    <textarea id="message" name="message" rows="100" cols="79"></textarea><br>
-    <button type="submit">Senden</button>
+    <input type="text" id="name" name="name" placeholder="Max Mustermann" class="kontaktinputname" required><br>
+    <textarea id="message" name="message" class="kontaktinputmessage" required></textarea><br>
+    <button type="submit" class="kontaktinputsubmit">Senden</button>
   </form> 
   <script src="javascript/email.js"></script>
 

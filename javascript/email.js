@@ -9,7 +9,7 @@ document
       .sendForm("service_rnagssp", "template_18sz2tk", this)
       .then(
         function () {
-          alert("Mail erfolgreich gesendet!");
+          alert("Ihre Nachricht wurde erfolgreich erfasst!");
         },
         function (error) {
           alert("Fehler: " + JSON.stringify(error));

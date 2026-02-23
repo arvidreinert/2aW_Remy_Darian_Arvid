@@ -259,6 +259,7 @@
   width:49%;
   margin-top: 5px;
 }
+
 .aboutustitle2 {
   position: absolute;
   font-family: 'Times New Roman', Times;
@@ -267,4 +268,54 @@
   width:49%;
   right: 0%;
 }
-/*style="color: green; border: 2px; border-color: black; background-color: aquamarine; border-radius: 10px; border-style: solid; text-decoration: none; height: 5vh;"
+
+.kontakttext1{
+  margin-top: 3%;
+  position: relative;
+  font-family: 'Times New Roman', Times;
+  font-size: 2vw;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.kontaktinputname {
+  position: relative;
+  background: rgb(255, 248, 123);
+  border: none;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 1%;
+  width: 20%;
+  height: 15%;
+  text-align: center;
+  color: black;
+}
+
+.kontaktinputmessage {
+  position: relative;
+  background: rgb(255, 248, 123);
+  border: none;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 8%;
+  width: 50%;
+  text-align: center;
+  color: black;
+  resize: none;
+  min-height: 120px;
+  padding: 10px;
+}
+
+.kontaktinputsubmit {
+  position: relative;
+  background: rgb(255, 248, 123);
+  border: none;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 1%;
+  width: 20%;
+  height: 15%;
+  text-align: center;
+  color: black;
+}
