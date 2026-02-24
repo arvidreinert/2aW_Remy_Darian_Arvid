@@ -2,6 +2,7 @@
 <html>
   <head>
   <link rel="stylesheet" href="style.css">
+  <!--Das Tool um Emails zu verschicken:-->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   </head>
 
@@ -12,6 +13,7 @@
   </div>
   <p class="cttitle">Unser Warenlager in Mitteleuropa ist unter folgendem Kontakt zu erreichen:</p>
   <br>
+  <!--Die Tabelle-->
   <table class="contacttable">
     </thead>
     <tbody>
@@ -30,12 +32,13 @@
     </tbody>
   </table>
   <p class="kontakttext1">Hier Können Sie uns direkt eine Nachricht schreiben:</p>
-
+  
+  <!--Das Eingabeformular-->
   <form id="contactform">
     <input type="text" id="name" name="name" placeholder="Max Mustermann" class="kontaktinputname" required>
     <input type="email" id="mail" name="mail" placeholder="max.musterman@meinmail.com" class="kontaktinputmail" required><br>
     <textarea id="message" name="message" class="kontaktinputmessage" required></textarea><br>
-    <button type="submit" class="kontaktinputsubmit">Senden</button>
+    <button type="submit" class="kontaktinputsubmit" id="sentbutton">Senden</button>
   </form> 
   <script src="javascript/email.js"></script>
 
